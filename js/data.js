@@ -1,11 +1,11 @@
 // All site content lives here. Edit this file to update the portfolio —
 // index.html and main.js should not need changes for content updates.
 const PORTFOLIO = {
-  name: "Your Name",
+  name: "Hanna Truong",
   role: "Software Developer",
-  tagline: "I build clean, useful web applications and enjoy turning ideas into products.",
-  location: "City, Country",
-  email: "you@example.com",
+  tagline: "I enjoy building applications that deliver real value to users and making innovative ideas a reality.",
+  location: "Canberra, Australia",
+  email: "hanna.truongg@gmail.com",
   avatar: "", // e.g. "assets/avatar.jpg" — leave empty to show initials
   resumeUrl: "", // e.g. "assets/cv.pdf" — leave empty to hide the button
 
