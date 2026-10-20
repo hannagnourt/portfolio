@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <meta name="description" content="Personal portfolio — projects, skills, experience and contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // Apply saved theme before paint to avoid a flash.
+    try {
+      const t = localStorage.getItem("theme");
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="brand" data-field="name">Portfolio</a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">&#9680;</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="avatar" id="avatar"></div>
+      <div>
+        <p class="eyebrow">Hi, I'm</p>
+        <h1 data-field="name"></h1>
+        <p class="role" data-field="role"></p>
+        <p class="tagline" data-field="tagline"></p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#" class="btn" id="resume-link" target="_blank" rel="noopener">Download CV</a>
+        </div>
+        <ul class="socials" id="hero-socials"></ul>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <div id="about-content" class="prose"></div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div id="projects-grid" class="grid"></div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <div id="skills-list" class="skills"></div>
+    </section>
+
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
+      <ol id="experience-list" class="timeline"></ol>
+    </section>
+
+    <section id="education" class="section container">
+      <h2>Education</h2>
+      <ol id="education-list" class="timeline"></ol>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p class="prose" data-field="contactBlurb"></p>
+      <div class="contact">
+        <form id="contact-form" class="card">
+          <label>Name <input name="name" required></label>
+          <label>Email <input name="email" type="email" required></label>
+          <label>Message <textarea name="message" rows="5" required></textarea></label>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+        <div class="card contact-info">
+          <p><strong>Email</strong><br><a id="contact-email" href="#"></a></p>
+          <p><strong>Location</strong><br><span data-field="location"></span></p>
+          <ul class="socials" id="contact-socials"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year"></span> <span data-field="name"></span></p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
