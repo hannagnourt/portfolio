@@ -6,18 +6,18 @@ const PORTFOLIO = {
   tagline: "I enjoy building applications that deliver real value to users and making innovative ideas a reality.",
   location: "Canberra, Australia",
   email: "hanna.truongg@gmail.com",
-  avatar: "", // e.g. "assets/avatar.jpg" — leave empty to show initials
+  avatar: "", // e.g. "assets/avatar.JPG" — leave empty to show initials
   resumeUrl: "", // e.g. "assets/cv.pdf" — leave empty to hide the button
 
-  // Background photo for each section, e.g. "assets/backgrounds/home.jpg" — leave empty for none.
+  // Background photo for each section, e.g. "assets/backgrounds/home.JPG" — leave empty for none.
   backgrounds: {
-    home: "assets/backgrounds/home.jpg",
-    about: "assets/backgrounds/about.jpg",
-    projects: "assets/backgrounds/projects.jpg",
-    skills: "assets/backgrounds/skills.jpg",
-    experience: "assets/backgrounds/experience.jpg",
-    education: "assets/backgrounds/education.jpg",
-    contact: "assets/backgrounds/contact.jpg",
+    home: "assets/backgrounds/home.JPG",
+    about: "assets/backgrounds/about.JPG",
+    projects: "assets/backgrounds/projects.JPG",
+    skills: "assets/backgrounds/skills.JPG",
+    experience: "assets/backgrounds/experience.JPG",
+    education: "assets/backgrounds/education.JPG",
+    contact: "assets/backgrounds/contact.JPG",
   },
 
   socials: [
@@ -87,9 +87,23 @@ const PORTFOLIO = {
   ],
 
   skills: [
-    { category: "Languages", items: ["Java", "Python", "C++", "C", "Haskell", "JavaScript","SQL"] },
-    { category: "Frameworks", items: ["React", "Node.js", "Express"] },
-    { category: "Tools", items: ["Git", "Docker", "Figma", "VS Code"] },
+    { category: "Languages", items: ["Java", "Python", "C++", "C", "Haskell", "JavaScript", "SQL"] },
+    {
+      category: "Frameworks & Tools",
+      items: ["Android SDK", "PySide6/PyQt", "Qt", "Git", "Android Studio", "IntelliJ IDEA", "Linux"],
+    },
+    {
+      category: "Expertise",
+      items: [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming",
+        "Design Patterns",
+        "Relational Databases",
+        "Requirements Analysis",
+        "User-Centred Design",
+        "Agile",
+      ],
+    },
   ],
 
   experience: [
