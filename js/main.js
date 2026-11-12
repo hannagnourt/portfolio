@@ -43,6 +43,7 @@
         ${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.title)} screenshot">` : ""}
         <h3>${esc(p.title)}</h3>
         <p>${esc(p.description)}</p>
+        ${p.points && p.points.length ? `<ul class="project-points">${p.points.map((pt) => `<li>${esc(pt)}</li>`).join("")}</ul>` : ""}
         <ul class="tags">${p.tags.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
         <div class="project-links">${link(p.demo, "Live demo")}${link(p.code, "Source code")}</div>
       </article>`

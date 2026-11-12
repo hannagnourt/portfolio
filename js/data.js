@@ -21,25 +21,53 @@ const PORTFOLIO = {
 
   projects: [
     {
-      title: "Project One",
-      description: "A one- or two-sentence summary of what the project does and the problem it solves.",
-      tags: ["JavaScript", "HTML", "CSS"],
-      image: "", // e.g. "assets/project-one.png"
-      demo: "https://example.com",
-      code: "https://github.com/yourname/project-one",
+      title: "OrthoVis 2.0",
+      description: "Medical imaging software for working with CT-based 3D imaging data, built in an Agile team.",
+      points: [
+        "Developed interactive GUI components using PyQt.",
+        "Implemented interactive 3D object manipulation features.",
+        "Supported CT image and data processing workflows, including validation of imported imaging files.",
+      ],
+      tags: ["Python", "PyQt", "Image Processing"],
+      image: "", // e.g. "assets/orthovis.png"
+      demo: "",
+      code: "",
     },
     {
-      title: "Project Two",
-      description: "Describe your role, the tech you used, and a result worth mentioning.",
-      tags: ["React", "Node.js"],
+      title: "IRRI Soil Data Visualization App",
+      description: "Android app built during a software development internship at IRRI that turns external soil datasets into map-based insights.",
+      points: [
+        "Gathered and analysed requirements and designed a structured development plan.",
+        "Integrated external APIs and datasets, converting raw JSON responses into map views.",
+        "Processed and mapped coordinate data, validating outputs against known soil maps.",
+      ],
+      tags: ["Android", "Google Maps API", "JSON", "Geospatial Data"],
       image: "",
       demo: "",
-      code: "https://github.com/yourname/project-two",
+      code: "",
     },
     {
-      title: "Project Three",
-      description: "Another project that shows a different skill or interest.",
-      tags: ["Python", "Data"],
+      title: "EatInTime",
+      description: "Team-built Android app for managing user and restaurant data with real-time sync.",
+      points: [
+        "Designed the data structure for user and restaurant data.",
+        "Implemented backend logic using Firebase Realtime Database.",
+        "Collaborated on user-facing features using Git and Android Studio.",
+      ],
+      tags: ["Android", "Firebase", "Realtime Database"],
+      image: "",
+      demo: "",
+      code: "",
+    },
+    {
+      title: "Stock Watchlist Desktop App",
+      description: "IB high school project: a desktop app for monitoring live stock data, built for a client.",
+      points: [
+        "Gathered and analysed requirements with the client.",
+        "Scraped and parsed live stock data from HTML sources using JSoup.",
+        "Built a clean interface that lets users group stocks by industry and trend.",
+      ],
+      tags: ["Java", "HTML", "JSoup"],
       image: "",
       demo: "",
       code: "",

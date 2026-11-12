@@ -155,6 +155,9 @@ h3 { font-size: 1.1rem; }
 .project { display: flex; flex-direction: column; }
 .project img { width: 100%; border-radius: 8px; margin-bottom: 1rem; aspect-ratio: 16 / 9; object-fit: cover; }
 .project p { color: var(--muted); flex: 1; }
+.project p:has(+ .project-points) { flex: 0 0 auto; }
+.project-points { color: var(--muted); flex: 1; margin: 0 0 1rem; padding-left: 1.1rem; }
+.project-points li { margin-bottom: 0.3rem; }
 .project-links { display: flex; gap: 1rem; margin-top: 0.75rem; font-weight: 500; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; padding: 0; margin: 0; }
