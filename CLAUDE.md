@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-A personal portfolio site built with plain HTML, CSS, and vanilla JavaScript. There is no framework, no build step, and no dependencies (Inter is loaded from Google Fonts). It is a single page whose sections (Home, About, Projects, Skills, Experience, Education, Contact) are reached by anchor links in a sticky nav.
+A personal portfolio site built with plain HTML, CSS, and vanilla JavaScript. There is no framework, no build step, and no dependencies (Cookie and Cormorant Garamond are loaded from Google Fonts). It is a single page whose sections (Home, About, Projects, Skills, Experience, Education, Contact) are reached by anchor links in a sticky nav.
 
 ## Running
 
@@ -31,5 +31,5 @@ To add a new section, add a `<section id="…">` with an empty container to `ind
 
 - **Theming:** colours are CSS custom properties on `:root` in `css/styles.css`. The dark palette is defined twice, once under `@media (prefers-color-scheme: dark)` guarded by `:root:not([data-theme="light"])` and once under `:root[data-theme="dark"]`, so the OS setting applies unless the toggle overrides it. Change both blocks together. The toggle saves the choice to `localStorage`, and an inline script in `<head>` applies it before first paint.
 - **Contact form:** there is no backend. On submit, the form builds a `mailto:` link to `PORTFOLIO.email`. Replacing this with a form service (for example Formspree) would mean editing the submit handler in `main.js`.
-- **Optional fields:** an empty `avatar` falls back to initials, and an empty `resumeUrl` removes the CV button. A project with an empty `image`, `demo`, or `code` simply leaves that element out. Images and the CV are expected under `assets/`.
+- **Optional fields:** an empty `avatar` falls back to initials, and an empty `resumeUrl` removes the CV button. A project with an empty `image`, `demo`, or `code` simply leaves that element out. `backgrounds` maps section ids to photos; an empty value leaves that section on the plain page background. Images and the CV are expected under `assets/`.
 - Responsive breakpoint is `760px` (single column, collapsible nav).

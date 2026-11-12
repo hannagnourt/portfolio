@@ -9,6 +9,17 @@ const PORTFOLIO = {
   avatar: "", // e.g. "assets/avatar.jpg" — leave empty to show initials
   resumeUrl: "", // e.g. "assets/cv.pdf" — leave empty to hide the button
 
+  // Background photo for each section, e.g. "assets/backgrounds/home.jpg" — leave empty for none.
+  backgrounds: {
+    home: "assets/backgrounds/home.jpg",
+    about: "assets/backgrounds/about.jpg",
+    projects: "assets/backgrounds/projects.jpg",
+    skills: "assets/backgrounds/skills.jpg",
+    experience: "assets/backgrounds/experience.jpg",
+    education: "assets/backgrounds/education.jpg",
+    contact: "assets/backgrounds/contact.jpg",
+  },
+
   socials: [
     { label: "GitHub", url: "https://github.com/yourname" },
     { label: "LinkedIn", url: "https://linkedin.com/in/yourname" },

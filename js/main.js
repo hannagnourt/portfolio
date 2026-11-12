@@ -26,6 +26,15 @@
     avatar.textContent = d.name.split(/\s+/).map((w) => w[0]).join("").slice(0, 2).toUpperCase();
   }
 
+  // Section background photos: keys are section ids; empty values are skipped.
+  Object.entries(d.backgrounds || {}).forEach(([id, src]) => {
+    const section = document.getElementById(id);
+    if (!section || !src) return;
+    // Absolute URL, so the path isn't resolved relative to css/styles.css where var() is used.
+    section.style.setProperty("--section-bg", `url("${new URL(src, document.baseURI).href}")`);
+    section.classList.add("has-bg");
+  });
+
   const resume = $("#resume-link");
   if (d.resumeUrl) resume.href = d.resumeUrl;
   else resume.remove();
