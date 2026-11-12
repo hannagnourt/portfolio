@@ -22,7 +22,7 @@ const PORTFOLIO = {
 
   socials: [
     { label: "GitHub", url: "https://github.com/hannagnourt" },
-    { label: "LinkedIn", url: "https://linkedin.com/in/hannagnourt" },
+    { label: "LinkedIn", url: "https://au.linkedin.com/in/hanna-gnourt" },
   ],
 
   about: [
@@ -108,30 +108,48 @@ const PORTFOLIO = {
 
   experience: [
     {
-      role: "Job Title",
-      company: "Company Name",
-      period: "2024 — Present",
-      location: "City / Remote",
+      role: "Software Developer Intern",
+      company: "International Rice Research Institute (IRRI)",
+      period: "Dec 2024 — Feb 2025",
+      location: "Hanoi, Vietnam",
       points: [
-        "Key achievement or responsibility, ideally with a measurable result.",
-        "Another highlight from this role.",
+        "Turned research needs into specs and plans for an agricultural mapping app.",
+        "Built Java mobile application for visualising soil datasets, iterating on user feedback.",
       ],
     },
     {
-      role: "Previous Job Title",
-      company: "Previous Company",
-      period: "2022 — 2024",
-      location: "City",
-      points: ["What you worked on and what you learned."],
+      role: "AI Engineer Intern",
+      company: "HBLAB JSC Vietnam",
+      period: "Jan 2023 — Jun 2023",
+      location: "Hanoi, Vietnam",
+      points: [
+        "Built licence plate detection with Python image processing.",
+        "Prepared training datasets.",
+        "Gathered requirements from customers and reported weekly progress to stakeholders.",
+      ],
+    },
+    {
+      role: "Web Development Intern",
+      company: "International Rice Research Institute (IRRI)",
+      period: "Feb 2023 — May 2023",
+      location: "Hanoi, Vietnam",
+      points: [
+        "Helped build a PHP learning website for farmers, adding a WordPress chatbot.",
+        "Coordinated between internal teams and external partners.",
+      ],
     },
   ],
 
   education: [
     {
-      degree: "Bachelor of Science in Computer Science",
-      school: "University Name",
-      period: "2018 — 2022",
-      details: "Relevant coursework, honours, or thesis topic.",
+      degree: "Bachelor of Information Technology",
+      school: "Australian National University",
+      period: "2023 — 2026",
+      details: [
+        "Recipient of the ANU Chancellor’s International Scholarship",
+        "Dean’s Commendation List for Academic Achievement, Semester 1 2026 (top 5% of Bachelor of IT students, ANU School of Computing)",
+        "Relevant Courses: Software Engineering, Algorithms, Advanced Algorithms, Structured Programming, Human-Computer Interaction, Relational Databases"
+      ],
     },
   ],
 

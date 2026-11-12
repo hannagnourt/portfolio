@@ -91,7 +91,9 @@
           <span class="period">${esc(e.period)}</span>
         </div>
         <p class="muted">${esc(e.school)}</p>
-        ${e.details ? `<p>${esc(e.details)}</p>` : ""}
+        ${Array.isArray(e.details)
+          ? `<ul>${e.details.map((pt) => `<li>${esc(pt)}</li>`).join("")}</ul>`
+          : e.details ? `<p>${esc(e.details)}</p>` : ""}
       </li>`
     )
     .join("");
