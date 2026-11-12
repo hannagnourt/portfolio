@@ -21,13 +21,14 @@ const PORTFOLIO = {
   },
 
   socials: [
-    { label: "GitHub", url: "https://github.com/yourname" },
-    { label: "LinkedIn", url: "https://linkedin.com/in/yourname" },
+    { label: "GitHub", url: "https://github.com/hannagnourt" },
+    { label: "LinkedIn", url: "https://linkedin.com/in/hannagnourt" },
   ],
 
   about: [
-    "Write a short introduction about yourself here: who you are, what you do, and what you care about.",
-    "Add a second paragraph about your interests, how you like to work, or what you're looking for next.",
+    "I've always been curious about how things are made: how a phone works, how an app knows what to show you, how a game builds a whole world out of code. That curiosity led me to my first lines of code, and later to competitive programming in secondary school, where I fell in love with the moment a hard problem finally clicks into place.",
+    "Studying Computer Science in the IB programme and building an app for a real client taught me that great software is never just clever code. It exists to serve people. My Bachelor of Information Technology at the Australian National University, specialising in Software Development and Business Information Systems, sharpened that thinking.",
+    "Since then I've built mobile, desktop, web, and AI applications with Java and Python, working with engineers and researchers to turn real needs into working products. I learn fast, love collaborating, and always keep the person on the other side of the screen at the centre of what I build.",
   ],
 
   projects: [
@@ -86,7 +87,7 @@ const PORTFOLIO = {
   ],
 
   skills: [
-    { category: "Languages", items: ["JavaScript", "TypeScript", "Python", "SQL"] },
+    { category: "Languages", items: ["Java", "Python", "C++", "C", "Haskell", "JavaScript","SQL"] },
     { category: "Frameworks", items: ["React", "Node.js", "Express"] },
     { category: "Tools", items: ["Git", "Docker", "Figma", "VS Code"] },
   ],
